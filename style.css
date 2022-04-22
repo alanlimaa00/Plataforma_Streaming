@@ -1,0 +1,202 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-destaque: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.caixa {
+    margin: 0 5em;  /* 0 cima e baixo | 6em esquerda e direita  */
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.imagem-combo {
+     margin: 1em 0 2em 0;  /* 1em acima | 0 direita | 2em abaixo | 0 esquerda */
+}
+
+.botao-plano-completo {
+    width: 100%;
+    border: none;
+    background-color: var(--azul-botao);
+    color: var(--branco-principal);
+    padding: 1em;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    margin: 10px;
+    display: block;
+}
+
+.botao-plano-completo:hover {
+    background-color: #0954b0;
+}
+
+.botao-plano-simples {
+    width: 100%;
+    color: var(--branco-principal);
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-color: 3px solid var(--branco-principal);
+    font-weight: bold;
+    transition: 0.5s;
+    margin: 10px;
+    background-color: #ffffff00;
+    display: block;
+}
+
+.botao-plano-simples:hover {
+    background-color: #ffffff19;
+}
+
+.aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao_titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto {
+    font-size: 15px;
+    color: var(--cinza-secundario);
+}
+
+
+.botao-terciario {
+    width: 40%;
+    border: none;
+    background-color: var(--azul-botao);
+    color: var(--branco-principal);
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-top: 1em;
+    display: grid;
+    padding: 12px;
+}
+
+.botao-terciario:hover {
+    background-color: #0954b0;
+}
+
+.img_telas {
+    width: 80%;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos_titulo {
+    font-size: 48px;
+}
+
+.lista_item {
+    font-size: 32px;
+}
+
+.logo_alura {
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.rodape {
+    margin: 10em 0;
+    text-align: center;
+}
+
+.menu_rodape {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.palavras_rodape {
+    margin-right: 1em;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.palavras_rodape a {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.palavras_rodape a:hover {
+    color: var(--azul-botao);
+}
+
+.creditos {
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--cinza-secundario);
+    margin-bottom: 1em;
+}
+
+.informacoes_endereco {
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--cinza-secundario);
+    margin-bottom: 5em;
+}
